@@ -1,0 +1,13 @@
+p = 41 , q = 43 (both must be prime nos)
+
+N = p*q = 1763 (product of p & q)
+r = (p-1)*(q-1) = 1680
+
+K = 1681 (= 1 when modulo r)
+
+e = 41 , d = 41 (K factorised)
+e*d%r has to equal 1
+
+msg = 61 (a)
+encrypt = 61^41%1763 = 184 (msg^e%n)
+decrypt = 184^41%1763 = 61 (cypher^d%n)
